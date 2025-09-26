@@ -1,0 +1,10 @@
+[
+  { "name": "Urgent" },
+  { "name": "Bug" },
+  { "name": "Feature" },
+  { "name": "High Priority" },
+  { "name": "Low Priority" },
+  { "name": "UI" },
+  { "name": "Backend" },
+  { "name": "Documentation" }
+]

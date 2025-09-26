@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Tanay Sharma",
+    "email": "tanay.sharma@example.com",
+    "password": "supersafepass1"
+  },
+  {
+    "name": "Priya Singh",
+    "email": "priya.singh@example.com",
+    "password":"supersafepass2"
+  }
+]

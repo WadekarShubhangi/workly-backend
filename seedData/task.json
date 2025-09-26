@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Setup project repository",
+    "project": "68d4e7f2fd0a799352478700",
+    "team": "68d4e7effd0a7993524786d5",
+    "owners": ["68d52e9cf0b3a5b532d8ea9b"],
+    "tags": ["Setup", "GitHub"],
+    "timeToComplete": 3,
+    "status": "To Do"
+ 
+  },
+  {
+    "name": "Create marketing campaign plan",
+    "project": "68d4e7f2fd0a799352478701",
+    "team": "68d4e7f0fd0a7993524786e9",
+    "owners": ["68d52e9cf0b3a5b532d8ea9b"],
+    "tags": ["Campaign", "Q4"],
+    "timeToComplete": 7,
+    "status": "In Progress"
+  
+  },
+  {
+    "name": "Client onboarding",
+    "project": "68d4e7f2fd0a799352478702",
+    "team": "68d4e7f1fd0a7993524786f1",
+    "owners": ["68d52e9cf0b3a5b532d8ea9b"],
+    "tags": ["Onboarding", "Customer"],
+    "timeToComplete": 5,
+    "status": "Blocked"
+  },
+  {
+    "name": "Prepare quarterly financial report",
+    "project": "68d4e7f2fd0a799352478703",
+    "team": "68d4e7f1fd0a7993524786f3",
+    "owners": ["68d52e9ef0b3a5b532d8ea9e"],
+    "tags": ["Finance", "Reports"],
+    "timeToComplete": 10,
+    "status": "To Do"
+  },
+  {
+    "name": "Build authentication module",
+    "project": "68d4e7f2fd0a799352478700",
+    "team": "68d4e7effd0a7993524786d5",
+    "owners": ["68d52e9ef0b3a5b532d8ea9e"],
+    "tags": ["Auth", "Backend"],
+    "timeToComplete": 6,
+    "status": "In Progress"
+  },
+  {
+    "name": "Design social media posts",
+    "project": "68d4e7f2fd0a799352478701",
+    "team": "68d4e7f0fd0a7993524786e9",
+    "owners": ["68d52e9ef0b3a5b532d8ea9e"],
+    "tags": ["Design", "Social Media"],
+    "timeToComplete": 4,
+    "status": "To Do"
+  }
+]

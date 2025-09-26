@@ -1,0 +1,6 @@
+[
+  { "name": "Development", "description": "Handles all development tasks" },
+  { "name": "Marketing", "description": "Handles marketing activities" },
+  { "name": "Sales", "description": "Handles sales and customer relations" },
+  { "name": "Finance", "description": "Manages company finances" }
+]
