@@ -12,19 +12,14 @@ const verifyJWT = (req, res, next) => {
     return res.status(401).json({ message: "No token provided." });
   }
   try {
-    // console.log(token);
     const decodedToken = jwt.verify(token, JWT_SECRET);
-    // console.log(token, decodedToken, JWT_SECRET)
-    
     req.user = decodedToken;
     console.log(req.user)
     next();
   } catch (error) {
-    return res.status(402).json({ message: "Invalid Token" });
+    return res.status(401).json({ message: "Invalid Token" });
   }
 };
-
-
 
 // controller
 router.post("/login", async (req, res) => {
@@ -34,13 +29,10 @@ router.post("/login", async (req, res) => {
     if (!userExist) {
       return res.status(400).json({ message: "UserId or password mismatch." });
     }
-
     const isMatch = await bcrypt.compare(password, userExist.password);
     if (!isMatch) {
       return res.status(400).json({ message: "Invalid email or password" });
     }
-
-  
       const token = jwt.sign(
         { id: userExist._id, email: userExist.email },
         JWT_SECRET,
@@ -56,7 +48,7 @@ router.post("/login", async (req, res) => {
   }
 });
 
-router.get("/api/profile", verifyJWT, (req, res) => {
+router.get("/me", verifyJWT, (req, res) => {
   res.json({ message: "Protected route" });
 });
 

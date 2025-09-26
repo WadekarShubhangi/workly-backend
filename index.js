@@ -19,6 +19,7 @@ app.use(cors(corsOptions));
 app.use(express.json());
 const Signup = require("./routes/signup.routes");
 const Login = require("./routes/login.routes");
+const Tasks = require("./routes/task.routes")
 
 
 // seedTag();
@@ -34,6 +35,9 @@ app.get("/", (req, res) => {
 app.get("/favicon.ico", (req, res) => res.status(204).end());
 app.use("/auth", Signup);
 app.use("/auth", Login);
+app.use("/tasks", Tasks)
+
+
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
